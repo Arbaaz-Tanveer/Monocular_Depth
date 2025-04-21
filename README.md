@@ -49,17 +49,15 @@ This repository detects objects (e.g., balls) in a camera feed, computes their g
 2. Update calibration parameters in `groundmapping.py`.  
 3. Launch detection script:  
    ```bash
-   python detection_main.py
+   python main.py
    ```
 4. Press **`q`** to quit the live display.
 
 ---
 
 ## Notes
+- TensorRT engines will need re‑export when changing YOLO version or model parameters.  
 
-- For multi‑camera setups, ensure synchronized USB bandwidth or use dedicated capture hardware.  
-- TensorRT engines may need re‑export when changing YOLO version or model size.  
--
 
 
 
